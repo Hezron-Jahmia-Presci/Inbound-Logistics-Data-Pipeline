@@ -1,0 +1,56 @@
+{
+ "stages": {
+  "bronze_ingest": 0.085,
+  "silver_clean": 0.07,
+  "gold_build": 0.039
+ },
+ "dq": {
+  "before": {
+   "completeness": 0.9802648662685017,
+   "format_validity": 0.9849006622516556,
+   "uniqueness": 0.9709166450272656,
+   "supplier_consistency": 0.9791388071676919
+  },
+  "after": {
+   "completeness": 1.0,
+   "format_validity": 1.0,
+   "uniqueness": 1.0,
+   "supplier_consistency": 1.0
+  }
+ },
+ "rejects": {
+  "gate_duplicates_removed": 112,
+  "gate_dates_reformatted": 54,
+  "gate_arrival_missing": 74,
+  "arrival_before_dispatch": 36,
+  "dispatch_imputed": 56,
+  "erp_invalid": 0,
+  "rain_days_imputed": 18
+ },
+ "bronze_rows": {
+  "erp": 3739,
+  "gate": 3851,
+  "rain": 731,
+  "events": 41,
+  "dispatch": 3683,
+  "suppliers": 12
+ },
+ "silver_rows": {
+  "deliveries": 3629,
+  "quarantined": 110,
+  "rainfall": 731,
+  "events_daily": 40
+ },
+ "gold_rows": {
+  "delivery_fact": 3629,
+  "monthly_kpi": 24
+ },
+ "tests": {
+  "reconciliation_ok": true,
+  "fact_unique_po": true,
+  "no_negative_dwell": true,
+  "idempotent_rerun": true
+ },
+ "gold_hash_run1": "0c5d861c6b59381e6fd59e2bc4d2ccbc",
+ "total_runtime_s": 0.209
+}

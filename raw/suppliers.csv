@@ -1,0 +1,13 @@
+supplier_id,zone,material,supplier_name
+S01,Kampala Industrial Area,Packaging,Supplier S01
+S02,Mukono,Resin/Chemicals,Supplier S02
+S03,Entebbe,Steel coil,Supplier S03
+S04,Jinja,Agro raw material,Supplier S04
+S05,Mbale,Spare parts,Supplier S05
+S06,Mbarara,Packaging,Supplier S06
+S07,Kampala Industrial Area,Resin/Chemicals,Supplier S07
+S08,Mukono,Steel coil,Supplier S08
+S09,Entebbe,Agro raw material,Supplier S09
+S10,Jinja,Spare parts,Supplier S10
+S11,Mbale,Packaging,Supplier S11
+S12,Mbarara,Resin/Chemicals,Supplier S12
